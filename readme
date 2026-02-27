@@ -1,1 +1,42 @@
-This code is prepared for TKDE. Some large-scale datasets can not be uploaded to GitHub. If you need, don't hesitate to get in touch with me at zskong@bjtu.edu.cn
+<div align="center">
+
+# Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment
+
+[![Venue](https://img.shields.io/badge/Venue-TKDE\_2026-blue.svg)](#)
+[![Contact](https://img.shields.io/badge/Contact-zskong%40bjtu.edu.cn-green.svg)](#)
+
+</div>
+
+> 官方代码实现：**"Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment"**，该论文已被 *IEEE Transactions on Knowledge and Data Engineering (TKDE) 2026* 接收。
+
+## 🌟 Overview
+
+We propose a novel **non-convex strategy** for multi-view subspace/anchor clustering. We warmly welcome you to use our non-convex function and sincerely hope it brings you a better experience in your research!
+
+### 🔑 Key Highlights
+* **Theoretical Guarantees**: We provide the theoretical proof for *convergence* in the supplementary materials, and the theoretical proof for *approximation* in the main text.
+* **Hyperparameter Setup**: Through extensive experiments, we found that most datasets achieve the best performance when the parameter $\theta = 10^{-1}$, while a few achieve optimal results when $\theta = 10^{-2}$. 
+
+---
+
+## 🗂️ Datasets
+
+Due to GitHub's file size limitations, some large-scale datasets cannot be uploaded directly to this repository. 
+If you need access to these datasets to reproduce our results or test your own models, please don't hesitate to reach out! 
+
+📧 **Contact:** [zskong@bjtu.edu.cn](mailto:zskong@bjtu.edu.cn)
+
+---
+
+## 📝 Citation
+
+If you find our work, strategy, or code helpful for your research, please consider citing our paper:
+
+```bibtex
+@article{kong2026tensorized, 
+  title={Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment},
+  author={Kong, Zisen and Chang, Dongxia and Wang, Yiming and Li, Pengyuan and Zhao, Yao},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  year={2026}
+}
+

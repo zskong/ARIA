@@ -2,7 +2,7 @@
 
 # Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment
 
-[![Venue](https://img.shields.io/badge/Venue-TKDE\_2026-blue.svg)](#)
+[![Venue](https://img.shields.io/badge/Venue-TKDE_2026-blue.svg)](#)
 [![Contact](https://img.shields.io/badge/Contact-zskong%40bjtu.edu.cn-green.svg)](#)
 
 </div>
@@ -15,7 +15,7 @@ We propose a novel **non-convex strategy** for multi-view subspace/anchor cluste
 
 ### 🔑 Key Highlights
 * **Theoretical Guarantees**: We provide the theoretical proof for *convergence* in the supplementary materials, and the theoretical proof for *approximation* in the main text.
-* **Hyperparameter Setup**: Through extensive experiments, we found that most datasets achieve the best performance when the parameter $\theta = 10^{-1}$, while a few achieve optimal results when $\theta = 10^{-2}$. 
+* **Hyperparameter Setup**: Through extensive experiments, we found that most datasets achieve the best performance when the parameter **θ = 10<sup>-1</sup>**, while a few achieve optimal results when **θ = 10<sup>-2</sup>**. 
 
 ---
 
@@ -39,4 +39,3 @@ If you find our work, strategy, or code helpful for your research, please consid
   journal={IEEE Transactions on Knowledge and Data Engineering},
   year={2026}
 }
-

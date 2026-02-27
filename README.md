@@ -2,20 +2,20 @@
 
 # Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment
 
-[![Venue](https://img.shields.io/badge/Venue-TKDE\_2026-blue.svg)](#)
+[![Venue](https://img.shields.io/badge/Venue-TKDE_2026-blue.svg)](#)
 [![Contact](https://img.shields.io/badge/Contact-zskong%40bjtu.edu.cn-green.svg)](#)
 
 </div>
 
-> Code implementation：**"Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment"**, This paper has been accepted by *IEEE Transactions on Knowledge and Data Engineering (TKDE) 2026.* 
+> Official code implementation for: **"Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment"**. This paper has been accepted by *IEEE Transactions on Knowledge and Data Engineering (TKDE) 2026*. 
 
 ## 🌟 Overview
 
-We propose a novel **non-convex strategy** for multi-view subspace/anchor clustering. We warmly welcome you to use our non-convex function and sincerely hope it brings you a better experience in your research!
+We propose a novel **non-convex strategy** for multi-view subspace/anchor clustering (Please refer to `rank_fun_derivative.m` and `solve_G.m` for implementation details). We warmly welcome you to use our non-convex function and sincerely hope it benefits your research!
 
 ### 🔑 Key Highlights
 * **Theoretical Guarantees**: We provide the theoretical proof for *convergence* in the supplementary materials, and the theoretical proof for *approximation* in the main text.
-* **Hyperparameter Setup**: Through extensive experiments, we found that most datasets achieve the best performance when the parameter $\theta = 10^{-1}$, while a few achieve optimal results when $\theta = 10^{-2}$. 
+* **Hyperparameter Setup**: Through extensive experiments, we found that most datasets achieve the best performance when the parameter **$\theta$ = 10<sup>-1</sup>**, while a few achieve optimal results when **$\theta$ = 10<sup>-2</sup>**. 
 
 ---
 

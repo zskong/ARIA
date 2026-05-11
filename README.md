@@ -33,9 +33,12 @@ If you need access to these datasets to reproduce our results or test your own m
 If you find our work or code helpful for your research, please consider citing our paper:
 
 ```bibtex
-@article{kong2026tensorized, 
+@article{kong2026tensorial, 
   title={Tensorial Multi-view Clustering via Alternative Rank Minimization and Inter-view Alignment},
   author={Kong, Zisen and Chang, Dongxia and Wang, Yiming and Li, Pengyuan and Zhao, Yao},
   journal={IEEE Transactions on Knowledge and Data Engineering},
-  year={2026}
+  year={2026},
+ volume={38},
+ number={5},
+ pages={3196-3209}
 }

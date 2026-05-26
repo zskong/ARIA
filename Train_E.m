@@ -1,4 +1,4 @@
-function [ZZ,Z,E,M,A,labels,converge_Z,converge_Z_G] = Train_E(X, cls_num, anchor,alpha,gamma,delta)
+function [ZZ,Z,M,labels,converge_Z,converge_Z_G] = Train_E(X, cls_num, anchor,alpha,gamma,delta)
 % X is a cell data, each cell is a matrix in size of d_v *N,each column is a sample;
 % cls_num is the clustering number 
 % anchor is the anchor number
@@ -47,13 +47,13 @@ end
 
 
   %% =========================== Update E^k, Y^k ===========================
-  for i=1:nV
-    P{i}=(X{i} - A{i}*Z{i}+ Y{i}/mu);
-    E{i} = prox_l1(P{i},alpha/mu);
+  %for i=1:nV
+    %P{i}=(X{i} - A{i}*Z{i}+ Y{i}/mu);
+    %E{i} = prox_l1(P{i},alpha/mu);
 
-% for i=1:nV
-%   [E{i}] = solve_l1l2(X{i}-A{i}*Z{i}+Y{i}/mu,alpha/mu);
-% end
+for i=1:nV
+  [E{i}] = solve_l1l2(X{i}-A{i}*Z{i}+Y{i}/mu,alpha/mu);
+end
   % ro_b =0;
   % E{1} =  Econcat(1:size(X{1},1),:);
   % Y{1} = Y{1} + mu*(X{1}-A{1}*Z{1}-E{1});
@@ -133,7 +133,7 @@ end
     converge_Z_G=[converge_Z_G max_Z_G];
    
     
-    if (iter>30)
+    if (iter>20)
         Isconverg  = 1;
     end
     iter = iter + 1;

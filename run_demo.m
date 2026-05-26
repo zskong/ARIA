@@ -43,7 +43,7 @@ for it_name = 1:length(dataname)
                    %[Sbar,y,U,Z,converge_Z,converge_Z_G] = Train_problem(X, cls_num, anchor,alpha,gamma,delta);
                     %[Sbar,y,U,Z,converge_Z,converge_Z_G] = Train_baseline(X, cls_num, anchor,alpha,gamma,delta);
                     %%下面的是AAAI  注意修改秩函数
-                    [ZZ,Z,E,M,A,y,converge_Z,converge_Z_G] = Train_E(X, cls_num, anchor,alpha,gamma,delta); 
+                    [ZZ,Z,M,y,converge_Z,converge_Z_G] = Train_E(X, cls_num, anchor,alpha,gamma,delta); 
                     time = toc;
                     %[ii,jj,hh,kk]=findnumber(1600,-6,1,-6,1,-6,1,1,7)%%查找具体某个数据对应的参数
                     [result(ii,:)]=  Clustering8Measure(gt, y);
